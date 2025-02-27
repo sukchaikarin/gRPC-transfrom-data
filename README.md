@@ -90,7 +90,7 @@ npx ts-node src/server.ts
 หรือ
 
 ```bash
-ืnpm run dev
+npm run dev
 ```
 
 Server จะเริ่มทำงานที่ localhost:50051

@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package transform;
+
+// Service: TransformService
+service TransformService {
+  rpc Transform (TransformRequest) returns (TransformResponse);
+}
+
+// Request Message
+message TransformRequest {
+  string url = 1;
+}
+
+// Response Message
+message TransformResponse {
+  map<string, DepartmentData> departments = 1;
+}
+
+// ข้อมูลแผนก (Department Data)
+message DepartmentData {
+  int32 male = 1;
+  int32 female = 2;
+  string ageRange = 3;
+  map<string, int32> hair = 4;
+  map<string, string> addressUser = 5;
+}
